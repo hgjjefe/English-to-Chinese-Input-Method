@@ -6,7 +6,7 @@ Ok, it's not fully English to Chinese, and the commands have a mix of English wo
 
 Currently it supports about 3,100 chinese characters.
 
-##### Rule: 
+### Rule: 
 
 - For commonly used Chinese characters, the corresponding english word or mandarin pronunciation is assigned to it.
 
@@ -16,7 +16,7 @@ Currently it supports about 3,100 chinese characters.
 
 - For cantonese characters, we may use its pronunciation
 
-### prefix:
+### Prefix:
 - a: quantifier
 - c: catonese  
 - p: putonghua
@@ -28,11 +28,11 @@ Currently it supports about 3,100 chinese characters.
 - EB: earthly branches 地支
 - CS: celestial stems 天干
 
-### connectives:
+### Connectives:
 - U: union (juxtaposition)
 - L: less (subtract something)
 
-### word roots: 字根
+### Word roots: 字根
 
 - 亻: man 
 - 氵: water
