@@ -2,7 +2,7 @@ const display = document.getElementById("display");
 let timer = null;
 let startTime = 0;
 let elapsedTime = 0;
-let timeAllowed = .1 * 60 * 1000;  // 10 minutes or any other value
+let timeAllowed = 10 * 60 * 1000;  // 10 minutes or any other value
 let remainingTime = timeAllowed;
 let isRunning = false;
 
@@ -55,15 +55,54 @@ function update(){
     display.textContent = `${hours}:${minutes}:${seconds}:${milliseconds}`;
 }
 
+
+// Retreive data from online txt file and put it in an array
+fileURL = "https://gist.githubusercontent.com/hgjjefe/1aeac23bed64c36efb9cf822893763f2/raw" 
+
+var dataArray;   // each element is a tuple of (command, output)
+var word_list = [];     // each element is command
+var char_list = []      // each element is a character
+
+fetch(fileURL)
+  .then(response => response.text())
+  .then(data => {
+    // Process and use the file content
+    dataArray = data.split("\n");
+
+    for(let i = 0; i<dataArray.length; i++) {
+        dataArray[i] = dataArray[i].split(" ");
+    }
+    for(let i = 0; i<dataArray.length; i++) {
+        word_list.push(dataArray[i][0]);
+        char_list.push(dataArray[i][1]);
+    }
+  })
+  .catch(error => {
+    // Handle any errors that occur during the fetch request
+    console.error(error);
+  });
+
+
 // TEXT BOX
 
 const text_box = document.getElementById("box");
 let cursorIndex = 0;
 
 window.addEventListener("keydown", pressSpace);
+text_box.addEventListener("input", inputKey);
+
+function inputKey(event){
+    console.log(event.inputType)
+
+    updateHintBox(text_box.selectionStart);
+    if (event.inputType == "insertCompositionText"){
+        updateWordCount()
+    }
+    
+}
 
 function pressSpace(event){
-    console.log(event.key)
+    //console.log(event.key)
     if (event.key == " "){
         event.preventDefault();  // ignore space input so it doesn't get typed into textbox
 
@@ -71,12 +110,21 @@ function pressSpace(event){
 
         convert();
         updateWordCount();
-        updateHintBox();
+        updateHintBox(text_box.selectionStart);
     }
-    if (event.key == "ArrowLeft" || event.key == "ArrowRight"){
-        console.log('hi')
-        updateHintBox();
+    else if (event.key == "ArrowLeft"){
+        if (text_box.selectionStart > 1 )
+            updateHintBox(text_box.selectionStart - 1 );
     }
+    else if (event.key == "ArrowRight"){
+        if (text_box.selectionStart < text_box.value.length )
+            updateHintBox(text_box.selectionStart + 1 );
+    }
+    else if (event.key == "Backspace"){
+        if (text_box.selectionStart > 1 && text_box.value.length )
+            updateHintBox(text_box.selectionStart - 1 );
+    }
+    
 }
 
 // PRESS SPACE
@@ -111,8 +159,14 @@ function isAlpha(ch){
 const word_count = document.getElementById("word-count");
 const hint_box = document.getElementById("hint-box")
 // hint of command for the character before cursor
-function updateHintBox(){
-    hint_box.textContent = text_box.value[ text_box.selectionStart - 1 ] ;
+function updateHintBox(index){
+    let char = text_box.value[ index - 1 ] ;
+    let eng_word = ""
+    if (char_list.includes(char)){
+        eng_word = dataArray[ char_list.indexOf(char) ][0] 
+    }
+
+    hint_box.textContent = eng_word ;
 }
 
 
@@ -123,27 +177,5 @@ function updateWordCount(){
 }
 
 
-// Retreive data from online txt file and put it in an array
-fileURL = "https://gist.githubusercontent.com/hgjjefe/1aeac23bed64c36efb9cf822893763f2/raw" 
 
-var dataArray;   // each element is a tuple of (command, output)
-var word_list = [];     // each element is command
-
-fetch(fileURL)
-  .then(response => response.text())
-  .then(data => {
-    // Process and use the file content
-    dataArray = data.split("\n");
-
-    for(let i = 0; i<dataArray.length; i++) {
-        dataArray[i] = dataArray[i].split(" ");
-    }
-    for(let i = 0; i<dataArray.length; i++) {
-        word_list.push(dataArray[i][0]);
-    }
-  })
-  .catch(error => {
-    // Handle any errors that occur during the fetch request
-    console.error(error);
-  });
 
