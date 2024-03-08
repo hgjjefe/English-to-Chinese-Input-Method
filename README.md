@@ -2,7 +2,7 @@
 
 The English-To-Chinese Typing Method maps each Chinese character to a corresponding English word or its Chinese pronunciation or other commands. Its advantage is that you can no longer worry about the stupid rules of Cangjie or the many inaccuracies of Pinyin typing method. It is also very easy to learn since there are only a few thousand English words to remember.
 
-Ok, it's not fully English to Chinese, and the commands have a mix of English words and Putonghua pronounciation and other stuff. This method makes each character's code more readable compared to other input methods like Cangjie, and makes each command only have one corresponding character. 
+Ok, it's not fully English to Chinese, as the commands have a mix of English words and Putonghua pronounciation and other stuff. But this method makes each character's code more readable compared to other input methods like Cangjie, and makes each command only have one corresponding character. 
 
 Currently it supports about 3,100 chinese characters.
 
