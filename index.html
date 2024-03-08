@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Input method</title>
+    <link rel="stylesheet" href="style.css">
+    
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700|Droid+Sans+Mono" rel="stylesheet">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+		<!-- highlight-within-textarea CSS/JS -->
+		<link href="jquery.highlight-within-textarea.css" rel="stylesheet">
+		<script src="jquery.highlight-within-textarea.js"></script>
+</head>
+<body>
+    <h1  id="myH1">Text Box (upper is sample, lower is input)</h1>
+    <div id="timer">
+        <div id="display">
+            00:10:00:00
+        </div>
+        <div id="controls">
+            <button id="startBtn" onclick="start()">Start</button>
+            <button id="stopBtn" onclick="stop()">Stop</button>
+            <button id="resetBtn" onclick="reset()">Reset</button>
+        </div>
+    </div>
+    
+    <textarea id="sample" name="sample-box" cols="59" rows="10" placeholder="Sample Text for copying"></textarea>
+    <br>
+    <textarea id="box" name="text-box" cols="59" rows="10" placeholder="Input Here"></textarea>
+
+
+    <div id="word-count">0 words</div>
+    <div id="hint-box">empty</div>
+
+    <script src="index.js"></script>
+</body>
+</html>
