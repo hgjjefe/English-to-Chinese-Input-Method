@@ -4,6 +4,8 @@ The English-To-Chinese Typing Method maps each Chinese character to a correspond
 
 Ok, it's not fully English to Chinese, as the commands have a mix of English words and Putonghua pronounciation and other stuff. But this method makes each character's code more readable compared to other input methods like Cangjie, and makes each command only have one corresponding character. 
 
+To input a character, type the English command in the input box and press enter.
+
 Currently it supports about 3,100 chinese characters.
 
 ### Rule: 
