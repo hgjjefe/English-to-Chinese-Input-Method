@@ -5,8 +5,6 @@ r 」
 quo 「」
 duo 『』
 suo 《》
-vuo 〈〉
-auo ‘’
 puo （）
 comma ，
 c ，
@@ -23,6 +21,7 @@ semicolon ；
 ellipsis ……
 dots ……
 bigdot ・
+space 	
 one 一
 tD 丁
 seven 七
@@ -149,7 +148,7 @@ portion 份
 imitate 仿
 cstand 企
 manUexc 伉
-e 伊
+iraq 伊
 manUand 伋
 manUfive 伍
 manUbranch 伎
@@ -253,6 +252,7 @@ has 有
 h 有
 sum 和
 s 和
+and 和
 this 這
 t 這
 mid 中
@@ -351,9 +351,7 @@ home 家
 electric 電
 e 電
 force 力
-tif 如
-if' breaks the entire document
-\newcommand{\water 水
+if 如
 water 水
 w 水
 chem 化
@@ -366,7 +364,7 @@ science 理
 sci 理
 getup 起
 small 小
-tlong 長
+long 長
 obj 物
 object 物
 now 現
@@ -439,7 +437,10 @@ btw 間
 jian 間
 interval 間
 appearance 樣
+sample 樣
+sam 樣
 surface 表
+sur 表
 with 與
 close 關
 each 各
@@ -460,6 +461,7 @@ u 你
 understand 明
 ming 明
 tomorrow 明
+tmr 明
 look 看
 origin 原
 you 又
@@ -467,7 +469,7 @@ me 麼
 benefit 利
 pro 利
 ratio 比
-tor 或
+or 或
 but 但
 mass 質
 gas 氣
@@ -494,6 +496,7 @@ moon 月
 month 月
 public 公
 none 無
+wu 無
 troop 軍
 army 軍
 very 很
@@ -568,6 +571,7 @@ hill 山
 unify 統
 takeover 接
 receive 接
+relay 接
 know 知
 compare 較
 com 較
@@ -673,6 +677,7 @@ aspiration 志
 aspire 志
 self 己
 usa 美
+mei 美
 again 再
 zai 再
 turn 轉
@@ -701,6 +706,7 @@ wan 萬
 every 每
 per 每
 eye 目
+mu 目
 to 至
 reach 達
 da 達
@@ -712,6 +718,7 @@ hint 示
 meeting 議
 sound 聲
 newspaper 報
+news 報
 fight 鬥
 theend 完
 species 類
@@ -737,7 +744,6 @@ meter 米
 m 米
 pickup 採
 adopt 採
-neat 整
 int 整
 empty 空
 air 空
@@ -753,6 +759,7 @@ dirt 土
 agree 許
 makewish 許
 Hui 許
+may 許
 step 步
 crowd 群
 stone 石
@@ -811,8 +818,8 @@ ore 礦
 thousand 千
 province 省
 council 委
-veg 素
 vegan 素
+element 素
 tech 技
 prepare 備
 half 半
@@ -829,11 +836,13 @@ approx 約
 branch 支
 basic 般
 history 史
+hist 史
 feel 感
 labour 勞
 labor 勞
 reunion 團
 eca 團
+tuan 團
 toward 往
 sour 酸
 called 稱
@@ -865,10 +874,11 @@ wei 維
 plan 劃
 choose 選
 mark 標
-twrite 寫
+write 寫
 exist 存
 wait 候
 dear 親
+qin 親
 mao 毛
 Mao 毛
 fast 快
@@ -911,7 +921,9 @@ fire 火
 reside 住
 full 滿
 district 縣
+xian 縣
 bureau 局
+ju 局
 shine 照
 accurate 準
 semi 準
@@ -960,6 +972,7 @@ dense 密
 crit 批
 camp 營
 listitem 項
+list 項
 prevent 防
 lift 舉
 sphere 球
@@ -969,6 +982,7 @@ oxygen 氧
 potential 勢
 tell 告
 Lee 李
+lee 李
 getoff 落
 fabric 布
 wood 木
@@ -1063,6 +1077,7 @@ city 城
 sense 覺
 band 夫
 enough 夠
+gou 夠
 giveaway 送
 away 送
 laugh 笑
@@ -1075,13 +1090,16 @@ rich 富
 spring 春
 jobpos 職
 vocation 職
+voc 職
 han 漢
 draw 畫
 work 功
 bus 巴
-altin 裡
+altli 裡
+ali 裡
 follow 跟
 although 雖
+tho 雖
 mixed 雜
 grocery 雜
 board 板
@@ -1130,7 +1148,6 @@ emperor 帝
 shoot 射
 grass 草
 range 範
-sample 範
 admit 承
 load 承
 alone 獨
@@ -1177,10 +1194,12 @@ client 客
 customer 客
 Yuen 袁
 cold 冷
-win 勝
+victory 勝
+vic 勝
 absolute 絕
 abs 絕
 analyze 析
+anal 析
 piece 塊
 dose 劑
 test 測
@@ -1246,8 +1265,10 @@ ba 吧
 tA 甲
 longtime 久
 vegetable 菜
+veg 菜
 flavour 味
 flavor 味
+tase 味
 oldtime 舊
 used 舊
 lake 湖
@@ -1327,7 +1348,8 @@ discuss 討
 evening 晚
 post 佈
 pellet 粒
-ali 粒
+vli 粒
+grain 粒
 mess 亂
 fuel 燃
 spear 矛
@@ -1346,6 +1368,7 @@ aloud 讀
 class 班
 sentence 句
 goodsmell 香
+hong 香
 forced 迫
 inbetween 介
 intermediate 介
@@ -1437,6 +1460,7 @@ thunder 雷
 seat 座
 poem 詩
 residence 居
+ig 居
 grab 抓
 crack 裂
 split 裂
@@ -1474,6 +1498,7 @@ patient 耐
 drama 劇
 gem 玉
 Chiu 趙
+chiu 趙
 jump 跳
 bigbro 哥
 season 季
@@ -1481,9 +1506,11 @@ lesson 課
 victor 凱
 quota 額
 unison 齊
+neat 齊
 fund 款
 intro 紹
 great 偉
+heroic 偉
 vapour 蒸
 steam 蒸
 forever 永
@@ -1552,7 +1579,7 @@ brain 腦
 soil 壤
 carbon 碳
 europe 歐
-sidebar 側
+sideway 側
 aside 側
 everywhere 遍
 knockoff 寨
@@ -1586,6 +1613,7 @@ visit 訪
 interview 訪
 through 透
 transparent 透
+tou 透
 knife 刀
 rotate 旋
 borrow 借
@@ -1656,6 +1684,7 @@ Qin 秦
 fats 脂
 tide 潮
 grandpa 爺
+grand 爺
 sudden 忽
 fk 忽
 plastic 塑
@@ -1680,12 +1709,15 @@ Chu 楚
 surprise 驚
 shock 驚
 squash 壁
+bar 壁
 rush 衝
 thank 謝
+thx 謝
 excite 奮
 purchase 購
 grind 磨
 goodman 君
+jun 君
 pool 池
 beside 旁
 fragment 碎
@@ -1731,6 +1763,7 @@ shake 搖
 valley 谷
 chest 箱
 separate 隔
+sep 隔
 subscribe 訂
 male 男
 boy 男
@@ -1786,6 +1819,7 @@ tube 筒
 insert 插
 shore 岸
 optimistic 朗
+lang 朗
 banker 莊
 crop 莊
 street 街
@@ -1808,6 +1842,7 @@ debate 辯
 ear 耳
 jacked 彪
 worthit 抵
+deserve 抵
 minister 臣
 hundmil 億
 Yi 億
@@ -1874,6 +1909,7 @@ dead 亡
 peak 峰
 coin 幣
 harbour 港
+harbor 港
 kong 港
 ctrap 伏
 dream 夢
@@ -2124,7 +2160,9 @@ rob 搶
 held 牽
 phd 博
 coincidence 巧
+choco 巧
 brother 兄
+bro 兄
 Du 杜
 woodUdirt 杜
 dove 杜
@@ -2168,6 +2206,7 @@ save 儲
 dorm 舍
 shallow 淺
 argue 鬧
+alarm 鬧
 disturb 擾
 purple 紫
 praise 讚
@@ -2185,6 +2224,8 @@ bottle 瓶
 grandma 婆
 arm 臂
 soothe 撫
+fondle 撫
+handUnone 撫
 caress 摸
 tolerate 忍
 shrimp 蝦
@@ -2364,6 +2405,7 @@ potassium 鉀
 paint 漆
 bird 鳥
 eyebrow 眉
+brow 眉
 tim 添
 evacuate 疏
 sparse 疏
@@ -2432,6 +2474,7 @@ bite 咬
 lobby 廳
 potato 薯
 driving 駛
+horseUhist 駛
 brush 刷
 repel 斥
 talent 賦
@@ -2745,7 +2788,6 @@ jam 醬
 sauce 醬
 disease 疫
 sadness 哀
-ig 哀
 barricade 堵
 Choi 蔡
 foam 沫
@@ -2790,7 +2832,6 @@ desert 漠
 indifferent 漠
 grievance 冤
 vast 宏
-grand 宏
 nazi 粹
 upsidedown 顛
 reciprocal 顛
@@ -3196,7 +3237,7 @@ clinic 診
 mediocre 庸
 vortex 渦
 roundabout 迴
-sus 嫌
+whine 嫌
 complain 嫌
 smart 聰
 clever 聰
@@ -3258,7 +3299,7 @@ riverside 浦
 honey 蜜
 toothpaste 膏
 ashe 艾
-winner 贏
+win 贏
 rabbit 兔
 pregnant 孕
 pity 憐
@@ -3355,6 +3396,7 @@ cat 貓
 media 媒
 spleen 脾
 tantrum 脾
+temper 脾
 noise 噪
 daylight 晝
 snake 蛇
@@ -3558,7 +3600,7 @@ astrology 占
 soccupy 占
 collapse 塌
 grieved 忉
-heartUknife 	忉
+heartUknife  忉
 lie 謊
 zaa 咋
 creepy 怖
@@ -3680,6 +3722,7 @@ monkey 猴
 trick 耍
 goUnotbad 趟
 manUbeside 傍
+bang 傍
 cleave 劈
 cheating 劈
 jazz 爵
@@ -4008,6 +4051,7 @@ lonesome 寞
 salary 薪
 sage 賢
 idiot 癡
+chi 癡
 stupid 蠢
 torture 虐
 smell 嗅
@@ -4044,7 +4088,7 @@ mic 咪
 cnoisy 嘈
 cnot 冇
 cyell 嗌
-clo 囉
+vlo 囉
 ccor 啱
 vzo 咗
 vze 嗻
@@ -4095,6 +4139,7 @@ hk 香港
 edu 教育
 taiwan 臺灣
 tw 台灣
+chinese 中國
 government 政府
 scientific 科學
 phoenix 鳳凰
@@ -4104,6 +4149,7 @@ a 一個
 coz 因為
 reason 原因
 why 為甚麼
+wh 為何
 what 甚麼
 zm 怎麼
 nm 那麼
