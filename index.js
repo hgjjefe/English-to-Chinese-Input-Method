@@ -92,7 +92,7 @@ window.addEventListener("keydown", pressSpace);
 text_box.addEventListener("input", inputKey);
 
 function inputKey(event){
-    console.log(event.inputType)
+    //console.log(event.inputType)
 
     updateHintBox(text_box.selectionStart);
     if (event.inputType == "insertCompositionText"){
@@ -142,7 +142,8 @@ function convert(){
         let word = str.slice(index, cursorIndex)  // get the last english word in the text_box string
     
         if (word_list.includes(word) ){
-            chin_char = dataArray[ word_list.indexOf(word) ][1]  ;    // get corresponding chin char from list
+            let len = dataArray[ word_list.indexOf(word) ][1].length;
+            chin_char = dataArray[ word_list.indexOf(word) ][1].slice(0, len-1)  ;    // get corresponding chin char from list
         }
         text_box.value = text_box.value.slice(0, index) + chin_char + text_box.value.slice(cursorIndex, str.length);  // replace eng word with chin char
         setCursorPosition(index + chin_char.length);  // set cursorPos back to next to the added chin word
@@ -153,7 +154,7 @@ function setCursorPosition(index) {
     text_box.selectionEnd = index;
   }
 function isAlpha(ch){
-    return /^[A-Z]$/i.test(ch);
+    return /^[A-Z,]$/i.test(ch);
 }
 
 const word_count = document.getElementById("word-count");
