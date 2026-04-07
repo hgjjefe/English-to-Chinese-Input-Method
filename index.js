@@ -57,7 +57,7 @@ function update(){
 
 
 // Retreive data from online txt file and put it in an array
-fileURL = "https://gist.githubusercontent.com/hgjjefe/1aeac23bed64c36efb9cf822893763f2/raw" 
+fileURL = "https://raw.githubusercontent.com/hgjjefe/English-to-Chinese-Input-Method/refs/heads/main/word_list.txt" 
 
 var dataArray;   // each element is a tuple of (command, output)
 var word_list = [];     // each element is command
