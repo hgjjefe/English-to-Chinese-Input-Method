@@ -19,7 +19,7 @@ Currently it supports about 3,100 chinese characters.
 - For cantonese characters, we may use its pronunciation
 
 ### Prefix:
-- a: quantifier
+- a/q: quantifier
 - c: catonese  
 - p: putonghua
 - s: simplified 
@@ -31,13 +31,13 @@ Currently it supports about 3,100 chinese characters.
 - CS: celestial stems 天干
 
 ### Connectives:
-- U: union (juxtaposition)
+- ,: union (juxtaposition)
 - L: less (subtract something)
 
 ### Word roots: 字根
 
 - 亻: man 
-- 氵: water
+- 氵: w
 - 糹: silk
 - 釒: gold
 - 車: car
@@ -47,7 +47,7 @@ Currently it supports about 3,100 chinese characters.
 - 木: wood
 - 王: king 
 - 艹: grass
-- ⺮: bamboo
+- ⺮: bam
 - 女: girl
 - 穴: cave
 - 宀: roof
