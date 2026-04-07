@@ -77,7 +77,7 @@ fetch(fileURL)
         let char_len = dataArray[i][1].length;
         char_list.push(dataArray[i][1].slice(0, char_len-1));
     }
-    console.log(char_list)
+    //console.log(char_list)
   })
   .catch(error => {
     // Handle any errors that occur during the fetch request
@@ -164,7 +164,7 @@ const hint_box = document.getElementById("hint-box")
 // hint of command for the character before cursor
 function updateHintBox(index){
     let char = text_box.value[ index - 1 ] ;
-    console.log(char, char_list)
+    //console.log(char, char_list)
     let eng_word = ""
     if (char_list.includes(char)){
         eng_word = dataArray[ char_list.indexOf(char) ][0] 
