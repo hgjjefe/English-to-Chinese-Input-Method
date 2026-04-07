@@ -87,7 +87,6 @@ mutual 互
 five 五
 well 井
 everlasting 亙
-dafaqisthis \symbol{"2F81B
 some 些
 asia 亞
 extremeLwood 亟
